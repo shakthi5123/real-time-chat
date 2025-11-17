@@ -23,7 +23,7 @@ export default function ChatPage() {
   useEffect(() => {
     // Initialize socket connection
     socketRef.current = io({
-      path: "/api/socket/io",
+      path: "/socket/io",
     });
 
     socketRef.current.on("connect", () => {

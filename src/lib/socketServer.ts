@@ -6,7 +6,7 @@ let io: Server | null = null;
 export function getIO(server: any) {
   if (!io) {
     io = new Server(server, {
-      path: "/api/socket/io",
+      path: "/socket/io",
       cors: { origin: "*" },
     });
 

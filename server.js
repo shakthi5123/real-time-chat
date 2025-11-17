@@ -18,7 +18,7 @@ app.prepare().then(() => {
 
   // Initialize Socket.io
   const io = new Server(server, {
-    path: "/api/socket/io",
+    path: "/socket/io",
     cors: { origin: "*" },
   });
 
