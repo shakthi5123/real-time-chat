@@ -1,36 +1,125 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Real-Time Chat App
 
-## Getting Started
+A fully functional real-time chat application built using Next.js, Tailwind CSS, Socket.IO, Node.js, and MongoDB.
+This project delivers an instant messaging experience with user authentication, live chat updates, and a clean responsive UI.
 
-First, run the development server:
+🔗 Live Demo: https://real-time-chat-ft26.onrender.com/
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+About the Project
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+A beautifully designed real-time chat application that focuses on:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1 Speed
+2 Simplicity
+3 Clean UI
+4 Smooth message sending
+5 Secure authentication
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Built fully from scratch using Next.js App Router, Socket.IO, and Prisma + MongoDB.
 
-## Learn More
+This project is perfect for anyone who wants to learn:
 
-To learn more about Next.js, take a look at the following resources:
+Real-time WebSocket communication
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Next.js custom Node server
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Authentication with NextAuth
 
-## Deploy on Vercel
+Clean responsive UI with Tailwind
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Deployment on Render
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Tech Stack
+
+Frontend: Next.js, React, Tailwind CSS
+Backend: Node.js, Socket.IO
+Auth: NextAuth.js
+Database: MongoDB (Prisma ORM)
+Tools: Git & GitHub, TypeScript
+Hosting: Render (Web Service)
+
+Features:
+
+Instant real-time messaging (Socket.IO)
+
+Secure login & logout (NextAuth)
+
+Auto-generated profile avatars
+
+Smooth and clean chat UI
+
+Fully responsive on mobile
+
+Modern Tailwind design
+
+Custom Node.js server for WebSockets
+
+Hosted on Render with CI/CD
+
+Screenshots: 
+
+### Home Page
+![Home Page](./screenshots/homePage.png)
+<!-- ![Home Page](./screenshots/home1.png) -->
+
+### Register/Signup Page
+![Register Page](./screenshots/registerPage.png)
+
+### Layout(App UI) Page
+![Layout Page](./screenshots/layout.png)
+
+### Mongodb data Page (How user data are stored in mongodb) 
+![Mongodb Page](./screenshots/mongodb.png)
+
+
+Installation & Setup:
+1. Clone the repo:
+git clone https://github.com/your-username/real-time-chatgit
+cd real-time-chat
+
+2. Install dependencies:
+npm install
+
+3. Generate Prisma Client:
+npx prisma generate
+
+4. Start development server:
+npm run dev 
+
+Environment Variables
+.env:
+DATABASE_URL="your-mongodb-url"
+
+.env.local:
+NEXTAUTH_SECRET="your-secret-key"
+NEXTAUTH_URL="http://localhost:3000"
+
+Deployment on Rende: 
+Build Command:
+npm install && npx prisma generate && npm run build
+
+Start Command:
+node server.js
+
+Add Environment Variables
+
+DATABASE_URL
+
+NEXTAUTH_SECRET
+
+NEXTAUTH_URL
+
+Then click Deploy 
+
+Future Enhancements :
+
+One-to-one private chats
+Typing indicator
+Online users list
+Message read receipts
+Storing chat history
+
+Author:
+Built with ❤️ by Shakthivel
+
+
